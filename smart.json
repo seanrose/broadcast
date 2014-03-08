@@ -1,6 +1,7 @@
 {
   "packages": {
     "bootstrap-3": {},
-    "iron-router": {}
+    "iron-router": {},
+    "iron-router-progress": {}
   }
 }

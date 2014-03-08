@@ -4,8 +4,10 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 insecure
 preserve-inputs
 bootstrap-3
 iron-router
+jquery
+viewer
+iron-router-progress

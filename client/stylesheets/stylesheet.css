@@ -1,0 +1,11 @@
+.viewer {
+    width: 100%;
+}
+
+.centered {
+    margin-top: 25%;
+}
+
+body, html, .container, .row, .col-xs-10, .viewer {
+    height: 100%;
+}

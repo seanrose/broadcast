@@ -1,0 +1,9 @@
+{
+  "name": "crocodoc-viewer",
+  "description": "viewer.js module for use with box view api",
+  "homepage": "https://github.com/mangasocial/meteor-bootstrap-3",
+  "author": "Sean Rose (http://seanrose.co)",
+  "version": "0.3.0",
+  "git": "",
+  "packages": { }
+}

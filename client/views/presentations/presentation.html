@@ -1,5 +1,13 @@
 <template name="presentation">
-    <div class="viewer">
-        <iframe src="https://view-api.box.com/1/sessions/{{sessionId}}/view?theme=light" allowfullscreen seamless></iframe>
+    <div class="row">
+        <div class="col-xs-1 centered">
+            <button type="button" id="previous" class="btn btn-default btn-lg pull-right">‹</button>
+        </div>
+        <div class="col-xs-10">
+            <div class="viewer" data-session="{{sessionId}}"></div>
+        </div>
+        <div class="col-xs-1 centered">
+            <button type="button" id="next" class="btn btn-default btn-lg pull-left">›</button>
+        </div>
     </div>
 </template>
