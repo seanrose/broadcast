@@ -4,7 +4,9 @@
             <button type="button" id="previous" class="btn btn-default btn-lg pull-right">‹</button>
         </div>
         <div class="col-xs-10">
-            <div class="viewer" data-session="{{sessionId}}"></div>
+            {{#constant}}
+            <div class="viewer"></div>
+            {{/constant}}
         </div>
         <div class="col-xs-1 centered">
             <button type="button" id="next" class="btn btn-default btn-lg pull-left">›</button>
