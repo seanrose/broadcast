@@ -11,6 +11,12 @@ Template.presentation.rendered = function() {
         });
         viewer.load();
 
+        // Ghetto means of passing the new page to where we can log to the DB
+        viewer.on('pagefocus', function(event) {
+            Session.set('page', event.data.page);
+            $('.page-tracker').trigger('click');
+        });
+
         // Set to true to ensure this block isn't run again
         this.rendered = true;
     }
@@ -18,6 +24,8 @@ Template.presentation.rendered = function() {
 
 Template.presentation.events({
     'click button': function(event) {
+        event.preventDefault();
+
         if (typeof viewer !== 'undefined') {
             var $button = $(event.target);
 
@@ -27,5 +35,11 @@ Template.presentation.events({
                 viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
             }
         }
+    },
+
+    'click .page-tracker': function(event) {
+        Presentations.update({_id: this._id}, {
+            $set: {page: Session.get('page')}
+        });
     }
 });
