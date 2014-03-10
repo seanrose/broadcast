@@ -19,3 +19,7 @@ body, html, .container, .row, .col-xs-10, .viewer {
 .btn:focus, .btn:active:focus {
   outline: none;
 }
+
+.container-fluid {
+	height: 100%;
+}
