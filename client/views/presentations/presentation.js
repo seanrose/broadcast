@@ -31,7 +31,11 @@ Template.presentation.rendered = function() {
         try {
             viewer.scrollTo(currentPage);
         } catch (e) {
-            if (e.message !== "Cannot call method 'scrollTo' of undefined") {
+            var dumbErrorArray = [
+                "Cannot call method 'scrollTo' of undefined",
+                "Cannot read property 'scrollTo' of undefined"
+            ]
+            if ($.inArray(e.message, dumbErrorArray) === -1) {
                 throw(e);
             }
         }
@@ -42,17 +46,13 @@ Template.presentation.events({
     'click button': function(e) {
         e.preventDefault();
 
-        if (typeof viewer !== 'undefined') {
             var $button = $(e.target);
 
-            if ($button.get(0).id === 'next') {
-                viewer.scrollTo(Crocodoc.SCROLL_NEXT);
-            } else if ($button.get(0).id === 'previous') {
-                viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
-            }
+        if ($button.get(0).id === 'next') {
+            viewer.scrollTo(Crocodoc.SCROLL_NEXT);
+        } else if ($button.get(0).id === 'previous') {
+            viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
         }
-
-        return false;
     },
 
     'click .page-tracker': function(e) {
