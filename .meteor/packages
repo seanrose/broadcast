@@ -11,3 +11,5 @@ iron-router
 jquery
 viewer
 iron-router-progress
+filepicker
+http
