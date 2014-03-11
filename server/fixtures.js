@@ -3,8 +3,8 @@ if (Presentations.find().count() === 0) {
 
     // a presentation
     Presentations.insert({
+        _id: '9wtSudD3G4MMKZvpN',
         sessionId: 'd3a1c0c5ef7549ed8f126251738f7f91',
-        viewerId: generateId(),
         page: "1"
     });
 }

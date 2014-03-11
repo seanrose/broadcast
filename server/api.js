@@ -10,8 +10,7 @@ Meteor.methods({
     	};
     	options.data = { url: fileUrl };
 
-    	HTTP.call('POST', DOCUMENTS_URL, options, function(error, response) {
-    		console.log(response);
-    	});
+    	var response = HTTP.call('POST', DOCUMENTS_URL, options);
+        console.log(response);
     }
 });
