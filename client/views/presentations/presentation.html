@@ -1,7 +1,9 @@
 <template name="presentation">
     <div class="row">
         <div class="col-xs-1 centered">
+            {{#if is_presenter}}
             <button type="button" id="previous" class="btn btn-default btn-lg pull-right">‹</button>
+            {{/if}}
         </div>
         <div class="col-xs-10">
             {{#constant}}
@@ -10,7 +12,9 @@
             {{/constant}}
         </div>
         <div class="col-xs-1 centered">
+            {{#if is_presenter}}
             <button type="button" id="next" class="btn btn-default btn-lg pull-left">›</button>
+            {{/if}}
         </div>
     </div>
 </template>
