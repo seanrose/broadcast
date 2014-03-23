@@ -3,6 +3,10 @@
     "bootstrap-3": {},
     "iron-router": {},
     "iron-router-progress": {},
-    "filepicker": {}
+    "filepicker": {},
+    "spin": {},
+    "viewer": {
+    	"path": "packages/viewer"
+    }
   }
 }

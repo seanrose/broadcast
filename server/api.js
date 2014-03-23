@@ -4,13 +4,36 @@ SESSIONS_URL = 'https://view-api.box.com/1/sessions'
 
 Meteor.methods({
 	createPresentation: function(fileUrl) {
+    	// First upload the document
     	var options = {};
     	options.headers = {
     		Authorization: 'Token ' + BOX_VIEW_TOKEN,
     	};
-    	options.data = { url: fileUrl };
+    	options.data = {
+    		url: fileUrl
+    	};
 
-    	var response = HTTP.call('POST', DOCUMENTS_URL, options);
-        console.log(response);
+    	var documentResponse = HTTP.call('POST', DOCUMENTS_URL, options);
+    	console.log(documentResponse);
+        // Now create a session
+        options.data = {
+        	document_id: documentResponse.data.id
+        }
+
+		var sessionResponse = {
+			data: {
+				statusCode: 202
+			}
+		};
+
+		while (sessionResponse.data.statusCode !== 201) {
+			Meteor.setTimeout(function() {
+				sessionResponse = HTTP.call('POST', SESSIONS_URL, options);
+				console.log(sessionResponse);
+			}, 2000);
+		}
+
+        // Finally return the new session ID
+
     }
 });
