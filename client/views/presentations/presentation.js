@@ -14,11 +14,13 @@ Template.presentation.rendered = function() {
         viewer.load();
 
         // Update the DB whenever the page changes
-        viewer.on('pagefocus', function(event) {
-            Presentations.update({_id: presentationData._id}, {
-                $set: {page: event.data.page}
+        if (this.data.is_presenter) {
+            viewer.on('pagefocus', function(event) {
+                Presentations.update({_id: presentationData._id}, {
+                    $set: {page: event.data.page}
+                });
             });
-        });
+        };
 
         // Set to true to ensure this block isn't run again
         this.rendered = true;
