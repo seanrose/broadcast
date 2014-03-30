@@ -1,7 +1,7 @@
-Template.presentationUpload.rendered = function() {
+Template.upload.rendered = function() {
 };
 
-Template.presentationUpload.events({
+Template.upload.events({
     'click #upload': function(e) {
         e.preventDefault();
         filepicker.setKey('A3UuvGmumRN273ixbsJnVz');
