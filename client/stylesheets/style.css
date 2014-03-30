@@ -23,3 +23,17 @@ body, html, .container, .row, .col-xs-10, .viewer {
 .container-fluid {
 	height: 100%;
 }
+
+/* animations? */
+
+.fade-in {
+  -webkit-animation: fadeIn 1.2s .5s forwards;
+     -moz-animation: fadeIn 1.2s .5s forwards;
+       -o-animation: fadeIn 1.2s .5s forwards;
+          animation: fadeIn 1.2s .5s forwards;
+}
+
+@-webkit-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+   @-moz-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+     @-o-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }

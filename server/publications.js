@@ -1,3 +1,3 @@
-Meteor.publish('singlePresentation', function(id) {
-    return id && Presentations.find(id);
+Meteor.publish('singlePresentation', function(data) {
+    return data && Presentations.find(data);
 });

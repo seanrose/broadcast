@@ -6,11 +6,12 @@ Template.presentation.helpers({
 
 Template.presentation.rendered = function() {
     presentationData = this.data;
+    var page = Session.get('isPresenter') ? 1 : this.data.page;
 
     viewer = Crocodoc.createViewer('.viewer', {
         url: 'https://view-api.box.com/1/sessions/'+ presentationData.sessionId + '/assets',
         layout: Crocodoc.LAYOUT_PRESENTATION,
-        page: this.data.page
+        page: page
     });
     viewer.load();
 
