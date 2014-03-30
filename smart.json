@@ -6,7 +6,10 @@
     "filepicker": {},
     "spin": {},
     "viewer": {
-    	"path": "packages/viewer"
+        "path": "packages/viewer"
+    },
+    "string-hash": {
+    	"path": "packages/string-hash"
     }
   }
 }

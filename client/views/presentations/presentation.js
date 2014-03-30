@@ -7,26 +7,20 @@ Template.presentation.helpers({
 Template.presentation.rendered = function() {
     presentationData = this.data;
 
-    // Stupid hack that ensures this is only run on first rendering
-    if (!this.rendered) {
-        viewer = Crocodoc.createViewer('.viewer', {
-            url: 'https://view-api.box.com/1/sessions/'+ presentationData.sessionId + '/assets',
-            layout: Crocodoc.LAYOUT_PRESENTATION
-        });
-        viewer.load();
+    viewer = Crocodoc.createViewer('.viewer', {
+        url: 'https://view-api.box.com/1/sessions/'+ presentationData.sessionId + '/assets',
+        layout: Crocodoc.LAYOUT_PRESENTATION
+    });
+    viewer.load();
 
-        // Update the DB whenever the page changes
-        if (Session.get('isPresenter')) {
-            viewer.on('pagefocus', function(event) {
-                Presentations.update({_id: presentationData._id}, {
-                    $set: {page: event.data.page}
-                });
+    // Update the DB whenever the page changes
+    if (Session.get('isPresenter')) {
+        viewer.on('pagefocus', function(event) {
+            Presentations.update({_id: presentationData._id}, {
+                $set: {page: event.data.page}
             });
-        };
-
-        // Set to true to ensure this block isn't run again
-        this.rendered = true;
-    }
+        });
+    };
 
     Deps.autorun(function() {
         // Only update the page if this is not the presenter

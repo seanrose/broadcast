@@ -1,0 +1,9 @@
+{
+  "name": "string-hash",
+  "description": "Adds a hash function to strings",
+  "homepage": "",
+  "author": "Sean Rose",
+  "version": "0.0.1",
+  "git": "",
+  "packages": {}
+}
