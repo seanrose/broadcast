@@ -1,3 +1,4 @@
+/* Layout */
 .viewer {
     width: 100%;
 }
@@ -6,15 +7,17 @@
     margin-top: 25%;
 }
 
-body, html, .container, .row, .col-xs-10, .viewer {
+body, html, .container, .col-xs-10, .row, .viewer {
     height: 100%;
 }
 
-.page-tracker {
-    display: none;
-}
+/* Typography */
 
 /* Bootstrap adjustments */
+
+.btn {
+  white-space: normal;
+}
 
 .btn:focus, .btn:active:focus {
   outline: none;
@@ -24,7 +27,15 @@ body, html, .container, .row, .col-xs-10, .viewer {
 	height: 100%;
 }
 
+.row-fluid {
+  padding: 10% 10%;
+}
+
 /* animations? */
+
+.not-visible {
+  display: none;
+}
 
 .fade-in {
   -webkit-animation: fadeIn 1.2s .5s forwards;

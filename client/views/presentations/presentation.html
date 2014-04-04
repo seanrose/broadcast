@@ -5,9 +5,12 @@
             <button type="button" id="previous" class="btn btn-default btn-lg pull-right">‹</button>
             {{/if}}
         </div>
+        {{#if sessionId}}
+        {{else}}
+        <h1>session is available!</h1>
+        {{/if}}
         <div class="col-xs-10">
             <div class="viewer crocodoc-presentation transition"></div>
-            <div class="page-tracker" data-page="1"></div>
         </div>
         <div class="col-xs-1 centered">
             {{#if isPresenter}}

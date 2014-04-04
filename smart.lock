@@ -27,8 +27,8 @@
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.2.0",
-        "commit": "ce730d1d26feadb7c75ea25f22c5bfdb0c549a8b"
+        "tag": "v0.3.1",
+        "commit": "3f7900feb4bb70a1289b39a1fdcd1f438c0335b3"
       },
       "filepicker": {
         "git": "https://github.com/Ink/meteor.git",
