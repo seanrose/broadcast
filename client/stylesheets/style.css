@@ -7,7 +7,7 @@
     margin-top: 25%;
 }
 
-body, html, .container, .col-xs-10, .row, .viewer {
+body, html, .container, .col-xs-10, .row, .row-fluid, .viewer {
     height: 100%;
 }
 
