@@ -12,7 +12,6 @@ Meteor.methods({
     	options.data = {
     		url: fileUrl
     	};
-
     	var documentResponse = HTTP.call('POST', DOCUMENTS_URL, options);
 
         // TODO(seanrose): handle failure case somehow lol
@@ -25,5 +24,21 @@ Meteor.methods({
         });
 
         return presentation;
+    },
+
+    createSession: function(documentId) {
+        // Create the session
+        var options = {};
+        options.headers = {
+            Authorization: 'Token ' + BOX_VIEW_API_KEY,
+        };
+        options.data = {
+            document_id: documentId
+        };
+        var sessionResponse = HTTP.call('POST', SESSIONS_URL, options);
+
+        // TODO(seanrose): handle failure case somehow lol
+
+        return sessionResponse.data.id;
     }
 });
