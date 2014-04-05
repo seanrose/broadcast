@@ -7,7 +7,7 @@
     margin-top: 25%;
 }
 
-body, html, .container, .container-fluid, .col-xs-10, .row, .row-fluid, .viewer {
+body, html, .container, .container-fluid, .col-xs-10, .row, .viewer {
     height: 100%;
 }
 
@@ -17,19 +17,71 @@ body, html, .container, .container-fluid, .col-xs-10, .row, .row-fluid, .viewer 
 
 /* Typography */
 
-/* Bootstrap adjustments */
-
-.presentation-btn {
-  height: 100%;
-  width: 100%;
+body {
+  font-family: "freight-sans-pro", helvetica, sans-serif;
 }
 
-.btn {
-  white-space: normal;
+.headline {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.headline h1 {
+  font-size: 72px;
+}
+
+.headline h3 {
+  font-size: 30px;
+}
+
+/* Bootstrap adjustments */
+
+.btn-presentation {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.btn-left {
+  background: url(/left-arrow.png) no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn-right {
+  background: url(/right-arrow.png) no-repeat;
+  background-position: 50% 50%;
+}
+
+.btn-left:active {
+  background: url(/left-arrow.png) no-repeat;
+  background-color: rgba(235, 235, 235, .8);
+  background-position: 50% 50%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-right:active {
+  background: url(/right-arrow.png) no-repeat;
+  background-color: rgba(235, 235, 235, .8);
+  background-position: 50% 50%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-huge {
+  height: 90px;
+  font-size: 24px;
 }
 
 .btn:focus, .btn:active:focus {
   outline: none;
+}
+
+.btn {
+  white-space: normal;
+  font-weight: bold;
 }
 
 .row-fluid {
@@ -40,7 +92,7 @@ body, html, .container, .container-fluid, .col-xs-10, .row, .row-fluid, .viewer 
 
 /* animations? */
 
-.not-visible {
+.transparent {
   opacity: 0;
 }
 
@@ -67,3 +119,15 @@ body, html, .container, .container-fluid, .col-xs-10, .row, .row-fluid, .viewer 
    @-moz-keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }
      @-o-keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }
         @keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }
+
+.fade-switch {
+  -webkit-animation: fadeSwitch .8s;
+     -moz-animation: fadeSwitch .8s;
+       -o-animation: fadeSwitch .8s;
+          animation: fadeSwitch .8s;
+}
+
+@-webkit-keyframes fadeSwitch { 0% { opacity: 1; } 50% { opacity: .3; } 100% { opacity: 1; } }
+   @-moz-keyframes fadeSwitch { 0% { opacity: 1; } 50% { opacity: .3; } 100% { opacity: 1; } }
+     @-o-keyframes fadeSwitch { 0% { opacity: 1; } 50% { opacity: .3; } 100% { opacity: 1; } }
+        @keyframes fadeSwitch { 0% { opacity: 1; } 50% { opacity: .3; } 100% { opacity: 1; } }

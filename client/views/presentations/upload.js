@@ -1,7 +1,7 @@
 Template.upload.events({
     'click #upload': function(e) {
         e.preventDefault();
-        $('#upload').addClass('fade-out');
+        $('#upload, h1, h3').addClass('fade-out ');
         filepicker.setKey('A3UuvGmumRN273ixbsJnVz');
         var pickerOptions = {
             extension: ['.pdf', '.ppt', '.pptx'],

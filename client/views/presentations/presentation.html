@@ -2,15 +2,15 @@
     <div class="row">
         <div class="col-xs-1 full-height">
             {{#if isPresenter}}
-            <button type="button" id="previous" class="btn presentation-btn btn-default btn-lg pull-right"><span class="glyphicon glyphicon-chevron-left"></span></button>
+            <button type="button" id="previous" class="btn btn-presentation btn-left btn-default btn-lg pull-right"></button>
             {{/if}}
         </div>
-        <div class="col-xs-10">
-            <div class="viewer crocodoc-presentation transition not-visible"></div>
+        <div class="col-xs-10 full-height">
+            <div class="viewer crocodoc-presentation transition transparent full-height"></div>
         </div>
         <div class="col-xs-1 full-height">
             {{#if isPresenter}}
-            <button type="button" id="next" class="btn presentation-btn btn-default btn-lg pull-left"><span class="glyphicon glyphicon-chevron-right"></span></button>
+            <button type="button" id="next" class="btn btn-presentation btn-right btn-default btn-lg pull-left"></button>
             {{/if}}
         </div>
     </div>
@@ -20,13 +20,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Share this link with people you want to present to!</h4>
+            <h4 class="modal-title">Share this link with people you want to present to:</h4>
           </div>
           <div class="modal-body">
             <p><a href="{{pathFor 'viewer'}}" target="_blank">{{baseUrl}}{{pathFor 'viewer'}}</a></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-lg btn-block btn-primary" data-dismiss="modal">Take me to my presentation...</button>
+            <button type="button" class="btn btn-lg btn-block btn-primary" data-dismiss="modal">Take me to my presentation!</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
