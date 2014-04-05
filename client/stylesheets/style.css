@@ -31,10 +31,12 @@ body, html, .container, .col-xs-10, .row, .row-fluid, .viewer {
   padding: 10% 10%;
 }
 
+/* Iron Router Progress Bar adjustments */
+
 /* animations? */
 
 .not-visible {
-  display: none;
+  opacity: 0;
 }
 
 .fade-in {
@@ -48,3 +50,15 @@ body, html, .container, .col-xs-10, .row, .row-fluid, .viewer {
    @-moz-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
      @-o-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
         @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+.fade-out {
+  -webkit-animation: fadeOut 1.2s .5s forwards;
+     -moz-animation: fadeOut 1.2s .5s forwards;
+       -o-animation: fadeOut 1.2s .5s forwards;
+          animation: fadeOut 1.2s .5s forwards;
+}
+
+@-webkit-keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }
+   @-moz-keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }
+     @-o-keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }
+        @keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; } }

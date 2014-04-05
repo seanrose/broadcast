@@ -15,6 +15,12 @@ Template.presentation.rendered = function() {
     });
     viewer.load();
 
+    viewer.on('ready', function() {
+        _.delay(function() {
+            $('.viewer').addClass('fade-in');
+        }, 700);
+    });
+
     // Update the DB whenever the page changes
     if (Session.get('isPresenter')) {
         viewer.on('pagefocus', function(event) {
