@@ -1,6 +1,10 @@
 Template.presentation.helpers({
     isPresenter: function() {
         return Session.get('isPresenter');
+    },
+
+    baseUrl: function() {
+        return window.location.protocol+"//"+window.location.host;
     }
 });
 
@@ -16,11 +20,17 @@ Template.presentation.rendered = function() {
     viewer.load();
 
     viewer.on('ready', function() {
-        // Delay because the viewer loads slightly before the template is ready
-        // there is probably a better way of doing this?
-        _.delay(function() {
+        if (Session.get('isPresenter')) {
+            // When the Box viewer is ready, show the modal with the viewer linik
+            var $viewerLinkModal = $('#viewer-link-modal');
+            $viewerLinkModal.modal('show');
+            // When the user closes the modal, fade in the presentation
+            $viewerLinkModal.on('hidden.bs.modal', function() {
+                $('.viewer').addClass('fade-in');
+            });
+        } else {
             $('.viewer').addClass('fade-in');
-        }, 700);
+        }
     });
 
     // Update the DB whenever the page changes
