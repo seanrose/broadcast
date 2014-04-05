@@ -7,13 +7,22 @@
     margin-top: 25%;
 }
 
-body, html, .container, .col-xs-10, .row, .row-fluid, .viewer {
+body, html, .container, .container-fluid, .col-xs-10, .row, .row-fluid, .viewer {
     height: 100%;
+}
+
+.full-height {
+  height: 100%;
 }
 
 /* Typography */
 
 /* Bootstrap adjustments */
+
+.presentation-btn {
+  height: 100%;
+  width: 100%;
+}
 
 .btn {
   white-space: normal;
@@ -21,10 +30,6 @@ body, html, .container, .col-xs-10, .row, .row-fluid, .viewer {
 
 .btn:focus, .btn:active:focus {
   outline: none;
-}
-
-.container-fluid {
-	height: 100%;
 }
 
 .row-fluid {

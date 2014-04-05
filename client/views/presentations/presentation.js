@@ -16,6 +16,8 @@ Template.presentation.rendered = function() {
     viewer.load();
 
     viewer.on('ready', function() {
+        // Delay because the viewer loads slightly before the template is ready
+        // there is probably a better way of doing this?
         _.delay(function() {
             $('.viewer').addClass('fade-in');
         }, 700);

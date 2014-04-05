@@ -1,8 +1,8 @@
 <template name="presentation">
     <div class="row">
-        <div class="col-xs-1 centered">
+        <div class="col-xs-1 full-height">
             {{#if isPresenter}}
-            <button type="button" id="previous" class="btn btn-default btn-lg pull-right">‹</button>
+            <button type="button" id="previous" class="btn presentation-btn btn-default btn-lg pull-right"><span class="glyphicon glyphicon-chevron-left"></span></button>
             {{/if}}
         </div>
         {{#if sessionId}}
@@ -12,9 +12,9 @@
         <div class="col-xs-10">
             <div class="viewer crocodoc-presentation transition not-visible"></div>
         </div>
-        <div class="col-xs-1 centered">
+        <div class="col-xs-1 full-height">
             {{#if isPresenter}}
-            <button type="button" id="next" class="btn btn-default btn-lg pull-left">›</button>
+            <button type="button" id="next" class="btn presentation-btn btn-default btn-lg pull-left"><span class="glyphicon glyphicon-chevron-right"></span></button>
             {{/if}}
         </div>
     </div>
