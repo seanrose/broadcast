@@ -3,7 +3,11 @@ Template.upload.events({
         e.preventDefault();
         $('#upload').addClass('fade-out');
         filepicker.setKey('A3UuvGmumRN273ixbsJnVz');
-        filepicker.pick(function(InkBlob) {
+        var pickerOptions = {
+            extension: ['.pdf', '.ppt', '.pptx'],
+            services: ['COMPUTER', 'BOX','DROPBOX', 'GOOGLE_DRIVE', 'SKYDRIVE', 'URL']
+        }
+        filepicker.pick(pickerOptions, function(InkBlob) {
             Meteor.call('createPresentation', InkBlob.url, function(error, presentationId) {
             	Router.go('presenter', {_id: presentationId});
             });
