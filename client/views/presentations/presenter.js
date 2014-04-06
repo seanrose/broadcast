@@ -6,12 +6,10 @@ Template.presenter.helpers({
 
 Template.presenter.rendered = function() {
     presentationData = this.data;
-    var page = 1;
 
     viewer = Crocodoc.createViewer('.viewer', {
         url: 'https://view-api.box.com/1/sessions/'+ presentationData.sessionId + '/assets',
-        layout: Crocodoc.LAYOUT_PRESENTATION,
-        page: page
+        layout: Crocodoc.LAYOUT_PRESENTATION
     });
     viewer.load();
 
@@ -21,7 +19,7 @@ Template.presenter.rendered = function() {
         $viewerLinkModal.modal('show');
         // When the user closes the modal, fade in the presentation
         $viewerLinkModal.on('hidden.bs.modal', function() {
-            $('.viewer').addClass('fade-in');
+            $('.viewer, .btn-presentation').addClass('fade-in');
         });
     });
 

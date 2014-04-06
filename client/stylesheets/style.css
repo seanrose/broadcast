@@ -7,7 +7,7 @@
     margin-top: 25%;
 }
 
-body, html, .container, .container-fluid, .col-xs-10, .row, .viewer {
+body, html, .container, .container-fluid, .col-xs-10, .viewer {
     height: 100%;
 }
 
@@ -26,16 +26,27 @@ body {
 }
 
 .headline {
-  font-weight: lighter;
   text-align: center;
 }
 
 .headline h1 {
-  font-size: 5em;;
+  font-size: 5em;
+  font-weight: lighter;
 }
 
 .headline h3 {
   font-size: 2.4em;
+  font-weight: lighter;
+}
+
+.headline .btn {
+  height: 3em;
+  font-size: 1.92em;
+  margin-top: 1em;
+}
+
+.middle-align {
+  top: 10%;
 }
 
 /* viewer.js adjustments */
@@ -82,22 +93,12 @@ body {
   box-shadow: none;
 }
 
-.btn-huge {
-  height: 90px;
-  font-size: 1.92em;
-}
-
 .btn:focus, .btn:active:focus {
   outline: none;
 }
 
 .btn {
-  white-space: normal;
   font-weight: bold;
-}
-
-.row-fluid {
-  padding: 10% 10%;
 }
 
 /* Iron Router Progress Bar adjustments */
