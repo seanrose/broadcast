@@ -1,20 +1,15 @@
-<template name="presentation">
+<template name="presenter">
     <div class="row">
-        <div class="col-xs-1 full-height">
-            {{#if isPresenter}}
-            <button type="button" id="previous" class="btn btn-presentation btn-left btn-default btn-lg pull-right"></button>
-            {{/if}}
+        <div class="col-xs-1 no-padding full-height">
+            <button type="button" id="previous" class="btn btn-presentation btn-left btn-default btn-lg pull-right transparent fade-in"></button>
         </div>
         <div class="col-xs-10 full-height">
             <div class="viewer crocodoc-presentation transition transparent full-height"></div>
         </div>
-        <div class="col-xs-1 full-height">
-            {{#if isPresenter}}
-            <button type="button" id="next" class="btn btn-presentation btn-right btn-default btn-lg pull-left"></button>
-            {{/if}}
+        <div class="col-xs-1 no-padding full-height">
+            <button type="button" id="next" class="btn btn-presentation btn-right btn-default btn-lg pull-left transparent fade-in"></button>
         </div>
     </div>
-    {{#if isPresenter}}
     <div class="modal fade" id="viewer-link-modal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -28,8 +23,7 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-lg btn-block btn-primary" data-dismiss="modal">Take me to my presentation!</button>
           </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    {{/if}}
+        </div>
+      </div>
+    </div>
 </template>
