@@ -1,4 +1,5 @@
 /* Layout */
+
 .viewer {
     width: 100%;
 }
@@ -17,6 +18,34 @@ body, html, .container, .container-fluid, .col-xs-10, .viewer {
 
 .no-padding {
   padding: 0px;
+}
+
+.flex-center {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+
+   -webkit-box-align: center;
+   -moz-box-align: center; /* OLD… */
+   -ms-flex-align: center; /* You know the drill now… */
+   -webkit-align-items: center;
+   align-items: center;
+
+   -webkit-box-pack: center; -moz-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+   margin: 0;
+   height: 100%;
+   width: 100%;
+   padding-bottom: 5em;
 }
 
 /* Typography */
@@ -43,10 +72,6 @@ body {
   height: 3em;
   font-size: 1.92em;
   margin-top: 1em;
-}
-
-.middle-align {
-  top: 10%;
 }
 
 /* viewer.js adjustments */
