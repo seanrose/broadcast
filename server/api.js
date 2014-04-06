@@ -23,7 +23,8 @@ Meteor.methods({
         var presentation = Presentations.insert({
             documentId: documentResponse.data.id,
             sessionId: '',
-            page: 1
+            page: 1,
+            createdAt: Date.now()
         });
 
         return presentation;
