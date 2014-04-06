@@ -1,7 +1,10 @@
-BOX_VIEW_API_KEY = Meteor.settings.BOX_VIEW_API_KEY;
-DOCUMENTS_URL = 'https://view-api.box.com/1/documents';
-SESSIONS_URL = 'https://view-api.box.com/1/sessions';
+var BOX_VIEW_API_KEY = Meteor.settings.BOX_VIEW_API_KEY;
+var DOCUMENTS_URL = 'https://view-api.box.com/1/documents';
+var SESSIONS_URL = 'https://view-api.box.com/1/sessions';
 
+var HTTP_NO_CONTENT = 204;
+
+// TODO(seanrose): create single HTTP function that can handle rate limiting
 Meteor.methods({
 	createPresentation: function(fileUrl) {
         // First upload the document
@@ -40,5 +43,17 @@ Meteor.methods({
         // TODO(seanrose): handle failure case somehow lol
 
         return sessionResponse.data.id;
+    },
+
+    deleteDocument: function(documentId) {
+        var options = {};
+        options.headers = {
+            Authorization: 'Token ' + BOX_VIEW_API_KEY,
+        };
+        var single_document_url = DOCUMENTS_URL + '/' + documentId;
+
+        var documentResponse = HTTP.call('DELETE', single_document_url, options);
+
+        return documentResponse.statusCode === HTTP_NO_CONTENT;
     }
 });
