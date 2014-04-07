@@ -30,6 +30,7 @@ Template.presenter.rendered = function() {
         });
     });
 
+    // Bind page change controls to left and right arrow keys
     $(window).on('keydown', function(e){
         if (e.keyCode === 39) { // Right arrow key
             viewer.scrollTo(Crocodoc.SCROLL_NEXT);

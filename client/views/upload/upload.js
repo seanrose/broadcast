@@ -14,9 +14,9 @@ Template.upload.events({
         }
         filepicker.pick(pickerOptions, function(InkBlob) {
             // Now that we have a file, we don't need those controls
-            $('#upload, h1, h3').fadeOut();
-            Meteor.call('createPresentation', InkBlob.url, function(error, presentationId) {
-            	Router.go('presenter', {_id: presentationId});
+            $('.flex-center').fadeOut();
+            Meteor.call('createPresentation', InkBlob.url, function(error, presenterId) {
+            	Router.go('presenter', {presenterId: presenterId});
             });
         });
     }

@@ -4,7 +4,11 @@ var SESSIONS_URL = 'https://view-api.box.com/1/sessions';
 
 var HTTP_NO_CONTENT = 204;
 
-// TODO(seanrose): create single HTTP function that can handle rate limiting
+var generateId = function() {
+    return Math.random().toString(36).slice(2);
+};
+
+// TODO(seanrose): use power queue to handle rate limiting
 Meteor.methods({
 	createPresentation: function(fileUrl) {
         // First upload the document
@@ -19,15 +23,17 @@ Meteor.methods({
 
         // TODO(seanrose): handle failure case somehow lol
 
+        var presenterId = generateId();
         // Create the presentation in the DB
         var presentation = Presentations.insert({
             documentId: documentResponse.data.id,
             sessionId: '',
+            presenterId: presenterId,
             page: 1,
             createdAt: Date.now()
         });
 
-        return presentation;
+        return presenterId;
     },
 
     createSession: function(documentId) {

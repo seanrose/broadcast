@@ -17,7 +17,7 @@ Template.viewer.rendered = function() {
 
     Deps.autorun(function() {
         var presentationCursor = Presentations.find(
-            {_id: presentationData._id},
+            {sessionId: presentationData.sessionId},
             {fields: {page: 1} }
         );
         currentPage = presentationCursor.fetch()[0].page;
