@@ -68,6 +68,15 @@ body {
   font-weight: lighter;
 }
 
+.small-container {
+  margin: 0;
+}
+
+small {
+  font-size: 65%;
+  color: #999;
+}
+
 .headline .btn {
   height: 3em;
   font-size: 1.92em;
@@ -84,10 +93,14 @@ body {
 
 /* Bootstrap adjustments */
 
-.btn-presentation {
+.btn-presentation, .btn-presentation:focus {
   height: 100%;
   width: 100%;
   border: none;
+}
+
+.btn-presentation:hover {
+  background-color: rgba(235, 235, 235, .8);
 }
 
 .btn-left {
@@ -102,7 +115,7 @@ body {
 
 .btn-left:active {
   background: url(/left-arrow.png) no-repeat;
-  background-color: rgba(235, 235, 235, .8);
+  background-color: rgba(235, 235, 235, .7);
   background-position: 50% 50%;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -111,7 +124,7 @@ body {
 
 .btn-right:active {
   background: url(/right-arrow.png) no-repeat;
-  background-color: rgba(235, 235, 235, .8);
+  background-color: rgba(235, 235, 235, .7);
   background-position: 50% 50%;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -126,7 +139,70 @@ body {
   font-weight: bold;
 }
 
+.btn-round-green {
+  background-color: #fff;
+  border-color: rgba(116, 208, 112, 1);
+  color: rgba(116, 208, 112, 1);
+  border-width: .15em;
+  border-radius: 50px;
+  padding: 25px 80px;
+  line-height: 0;
+}
+
+.btn-round-green:hover {
+  background-color: rgba(116, 208, 112, 1);
+  color: #fff;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -box-shadow: none;
+}
+
+.btn-round-green:focus {
+  background-color: rgba(116, 208, 112, .8);
+  border-color: rgba(116, 208, 112, .8);
+  color: #fff;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -box-shadow: none;
+}
+
+.btn-round-green:visited {
+  background-color: #fff;
+  border-color: rgba(116, 208, 112, 1);
+  color: rgba(116, 208, 112, 1);
+  border-width: .15em;
+  border-radius: 50px;
+  padding: 25px 80px;
+  line-height: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -box-shadow: none;
+
+}
+
+.btn-round-green:active {
+  background-color: rgba(116, 208, 112, .9);
+  border-color: rgba(116, 208, 112, .9);
+  color: #fff;
+  border-width: .15em;
+  border-radius: 50px;
+  padding: 25px 80px;
+  line-height: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -box-shadow: none;
+}
+
 /* Iron Router Progress Bar adjustments */
+
+#iron-router-progress {
+    background-color: rgba(116, 208, 112, 1);
+    box-shadow: 0 0 0 rgba(116, 208, 112, 1);
+}
+
+#iron-router-progress.spinner:before {
+  border-color: rgba(116, 208, 112, 1);
+}
 
 /* animations? */
 

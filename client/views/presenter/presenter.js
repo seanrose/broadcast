@@ -30,12 +30,21 @@ Template.presenter.rendered = function() {
         });
     });
 
+    $(window).on('keydown', function(e){
+        if (e.keyCode === 39) { // Right arrow key
+            viewer.scrollTo(Crocodoc.SCROLL_NEXT);
+        } else if (e.keyCode === 37) { // left arrow key
+            viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
+        } else {
+            return;
+        }
+        e.preventDefault();
+    });
 };
 
 Template.presenter.events({
-    'click button': function(e) {
+    'click .btn-presentation': function(e) {
         e.preventDefault();
-
         var $button = $(e.target);
 
         if ($button.get(0).id === 'next') {
@@ -43,7 +52,5 @@ Template.presenter.events({
         } else if ($button.get(0).id === 'previous') {
             viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
         }
-
-        return false;
     }
 });
