@@ -145,8 +145,6 @@ small {
   color: rgba(116, 208, 112, 1);
   border-width: .15em;
   border-radius: 50px;
-  padding: 25px 80px;
-  line-height: 0;
 }
 
 .btn-round-green:hover {
@@ -172,12 +170,9 @@ small {
   color: rgba(116, 208, 112, 1);
   border-width: .15em;
   border-radius: 50px;
-  padding: 25px 80px;
-  line-height: 0;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -box-shadow: none;
-
 }
 
 .btn-round-green:active {
@@ -186,8 +181,6 @@ small {
   color: #fff;
   border-width: .15em;
   border-radius: 50px;
-  padding: 25px 80px;
-  line-height: 0;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -box-shadow: none;
