@@ -43,14 +43,13 @@ Template.presenter.rendered = function() {
 };
 
 Template.presenter.events({
-    'click .btn-presentation': function(e) {
+    'click #next': function(e) {
         e.preventDefault();
-        var $button = $(e.target);
+        viewer.scrollTo(Crocodoc.SCROLL_NEXT);
+    },
 
-        if ($button.get(0).id === 'next') {
-            viewer.scrollTo(Crocodoc.SCROLL_NEXT);
-        } else if ($button.get(0).id === 'previous') {
-            viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
-        }
+    'click #previous': function(e) {
+        e.preventDefault();
+        viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
     }
 });
