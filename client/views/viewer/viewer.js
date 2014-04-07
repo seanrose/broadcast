@@ -16,7 +16,10 @@ Template.viewer.rendered = function() {
     });
 
     Deps.autorun(function() {
-        var presentationCursor = Presentations.find({_id: presentationData._id});
+        var presentationCursor = Presentations.find(
+            {_id: presentationData._id},
+            {fields: {page: 1} }
+        );
         currentPage = presentationCursor.fetch()[0].page;
         // Must use try/catch block because of bug in Deps.afterFlush
         try {
