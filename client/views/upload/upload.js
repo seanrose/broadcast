@@ -1,3 +1,9 @@
+Template.upload.rendered = function() {
+    $('#title').addClass('bob-up');
+    $('#information').addClass('fade-in-long');
+    $('#upload').addClass('pop-out');
+};
+
 Template.upload.events({
     'click #upload': function(e) {
         e.preventDefault();
