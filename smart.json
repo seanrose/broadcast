@@ -9,6 +9,7 @@
       "path": "packages/viewer"
     },
     "cron": {},
-    "npm": {}
+    "npm": {},
+    "googleAnalytics": {}
   }
 }
