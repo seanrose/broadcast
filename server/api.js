@@ -4,6 +4,7 @@ var SESSIONS_URL = 'https://view-api.box.com/1/sessions';
 
 var HTTP_NO_CONTENT = 204;
 
+// TODO(seanrose): use UUID package
 var generateId = function() {
     return Math.random().toString(36).slice(2);
 };

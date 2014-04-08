@@ -1,6 +1,6 @@
 // TODO(seanrose): limit this subscription to querying only based on presentationId
-Meteor.publish('singlePresentation', function(data) {
-    return data && Presentations.find(data);
+Meteor.publish('presenter', function(presenterId) {
+    return presenterId && Presentations.find({presenterId: presenterId});
 });
 
 Meteor.publish('viewer', function(sessionId) {
