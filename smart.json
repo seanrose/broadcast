@@ -4,7 +4,6 @@
     "iron-router": {},
     "iron-router-progress": {},
     "filepicker": {},
-    "spin": {},
     "viewer": {
       "path": "packages/viewer"
     },

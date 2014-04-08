@@ -6,7 +6,6 @@
       "iron-router": {},
       "iron-router-progress": {},
       "filepicker": {},
-      "spin": {},
       "viewer": {
         "path": "packages/viewer"
       },
@@ -34,11 +33,6 @@
         "git": "https://github.com/Ink/meteor.git",
         "tag": "v0.4.0",
         "commit": "20d56aaaf48be3a5c0499547a495a6463b4fa3d9"
-      },
-      "spin": {
-        "git": "https://github.com/SachaG/meteor-spin.git",
-        "tag": "v0.2.2",
-        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "viewer": {
         "path": "packages/viewer"
