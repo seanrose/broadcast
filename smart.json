@@ -11,6 +11,7 @@
     "string-hash": {
       "path": "packages/string-hash"
     },
-    "cron": {}
+    "cron": {},
+    "npm": {}
   }
 }

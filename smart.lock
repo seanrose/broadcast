@@ -13,7 +13,8 @@
       "string-hash": {
         "path": "packages/string-hash"
       },
-      "cron": {}
+      "cron": {},
+      "npm": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -51,6 +52,11 @@
         "git": "https://github.com/alexsuslov/Meteor.cron.git",
         "tag": "v0.0.1",
         "commit": "5216d14472fee7b692e8371aadc9f35f54ba9bb0"
+      },
+      "npm": {
+        "git": "https://github.com/arunoda/meteor-npm.git",
+        "tag": "v0.2.6",
+        "commit": "177ab6118de5bf8cffb19481343d5762ff7a2aaf"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

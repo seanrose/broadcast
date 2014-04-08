@@ -16,3 +16,4 @@ spin
 string-hash
 cron
 force-ssl
+npm

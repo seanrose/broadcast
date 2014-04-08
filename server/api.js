@@ -5,8 +5,9 @@ var SESSIONS_URL = 'https://view-api.box.com/1/sessions';
 var HTTP_NO_CONTENT = 204;
 
 // TODO(seanrose): use UUID package
-var generateId = function() {
-    return Math.random().toString(36).slice(2);
+var generateUUID = function() {
+    var nodeUUID = Meteor.require('node-uuid');
+    return nodeUUID.v4();
 };
 
 // TODO(seanrose): use power queue to handle rate limiting
@@ -24,7 +25,7 @@ Meteor.methods({
 
         // TODO(seanrose): handle failure case somehow lol
 
-        var presenterId = generateId();
+        var presenterId = generateUUID();
         // Create the presentation in the DB
         var presentation = Presentations.insert({
             documentId: documentResponse.data.id,

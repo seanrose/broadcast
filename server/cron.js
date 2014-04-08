@@ -7,7 +7,7 @@ var deleteExpiredPresentations = function() {
 	);
 	expiredPresentations.forEach(function (presentation) {
 		// TODO (seanrose): handle failure case from API
-		console.log('Deleting Box View Document' + presentation.documentId);
+		console.log('Deleting Box View Document ' + presentation.documentId);
 		Meteor.call('deleteDocument', presentation.documentId);
 		console.log('Deleting ' + presentation._id);
 		Presentations.remove(presentation);
