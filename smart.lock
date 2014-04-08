@@ -10,9 +10,6 @@
       "viewer": {
         "path": "packages/viewer"
       },
-      "string-hash": {
-        "path": "packages/string-hash"
-      },
       "cron": {},
       "npm": {}
     },
@@ -44,9 +41,6 @@
       },
       "viewer": {
         "path": "packages/viewer"
-      },
-      "string-hash": {
-        "path": "packages/string-hash"
       },
       "cron": {
         "git": "https://github.com/alexsuslov/Meteor.cron.git",

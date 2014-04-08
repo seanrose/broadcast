@@ -13,7 +13,6 @@ iron-router-progress
 filepicker
 http
 spin
-string-hash
 cron
 force-ssl
 npm

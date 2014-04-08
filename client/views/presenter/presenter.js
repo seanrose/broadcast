@@ -26,7 +26,10 @@ Template.presenter.rendered = function() {
     // Update the DB whenever the page changes
     viewer.on('pagefocus', function(event) {
         Presentations.update({_id: presentationData._id}, {
-            $set: {page: event.data.page}
+            $set: {
+                page: event.data.page,
+                presenterId: presentationData.presenterId
+            }
         });
     });
 
