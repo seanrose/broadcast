@@ -8,9 +8,6 @@
     "viewer": {
       "path": "packages/viewer"
     },
-    "string-hash": {
-      "path": "packages/string-hash"
-    },
     "cron": {},
     "npm": {}
   }
