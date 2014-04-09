@@ -19,7 +19,8 @@ Template.presenter.rendered = function() {
         $viewerLinkModal.modal('show');
         // When the user closes the modal, fade in the presentation
         $viewerLinkModal.on('hidden.bs.modal', function() {
-            $('.viewer, .btn-presentation').addClass('fade-in');
+            $('.viewer').addClass('fade-in');
+            $('.btn-presentation').addClass('bob-in');
         });
     });
 

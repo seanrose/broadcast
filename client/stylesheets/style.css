@@ -262,3 +262,15 @@ small {
    @-moz-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
      @-o-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
         @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+.bob-in {
+  -webkit-animation: bobIn 1.2s 1.2s forwards;
+     -moz-animation: bobIn 1.2s 1.2s forwards;
+       -o-animation: bobIn 1.2s 1.2s forwards;
+          animation: bobIn 1.2s 1.2s forwards;
+}
+
+@-webkit-keyframes bobIn { 0% { opacity: 0; padding-right: 12em; } 100% { opacity: 1; padding-right: 0 } }
+   @-moz-keyframes bobIn { 0% { opacity: 0; padding-right: 12em; } 100% { opacity: 1; padding-right: 0 } }
+     @-o-keyframes bobIn { 0% { opacity: 0; padding-right: 12em; } 100% { opacity: 1; padding-right: 0 } }
+        @keyframes bobIn { 0% { opacity: 0; padding-right: 12em; } 100% { opacity: 1; padding-right: 0 } }
