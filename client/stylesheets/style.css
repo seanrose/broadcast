@@ -1,15 +1,21 @@
-/* Layout */
+/*
+basic layout
+******/
+
+body, html, .container, .container-fluid, .col-xs-10, .viewer {
+    height: 100%;
+}
 
 .viewer {
     width: 100%;
 }
 
-.centered {
-    margin-top: 25%;
+.small-container {
+  margin: 0;
 }
 
-body, html, .container, .container-fluid, .col-xs-10, .viewer {
-    height: 100%;
+.centered {
+    margin-top: 25%;
 }
 
 .full-height {
@@ -48,7 +54,9 @@ body, html, .container, .container-fluid, .col-xs-10, .viewer {
    padding-bottom: 5em;
 }
 
-/* Typography */
+/*
+typography and buttons
+**********************/
 
 body {
   font-family: "freight-sans-pro", helvetica, sans-serif;
@@ -68,30 +76,18 @@ body {
   font-weight: lighter;
 }
 
-.small-container {
-  margin: 0;
-}
-
 small {
   font-size: 65%;
   color: #999;
 }
+
+/* buttons */
 
 .headline .btn {
   height: 3em;
   font-size: 1.92em;
   margin-top: 2em;
 }
-
-/* viewer.js adjustments */
-
-.crocodoc-current-page {
-  width: inherit !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-/* Bootstrap adjustments */
 
 .btn-presentation, .btn-presentation:focus {
   height: 100%;
@@ -186,7 +182,19 @@ small {
   -box-shadow: none;
 }
 
-/* Iron Router Progress Bar adjustments */
+/*
+third-party element styles
+**************************/
+
+/* viewer.js adjustments */
+
+.crocodoc-current-page {
+  width: inherit !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* iron-router-progress adjustments */
 
 #iron-router-progress {
     background-color: rgba(116, 208, 112, 1);
@@ -197,7 +205,10 @@ small {
   border-color: rgba(116, 208, 112, 1);
 }
 
-/* animations? */
+/*
+animations
+**********/
+
 
 .transparent {
   opacity: 0;
@@ -247,9 +258,9 @@ small {
 }
 
 @-webkit-keyframes popOut { 0% { opacity: 0; -webkit-transform: scale(0); } 80% { -webkit-transform: scale(1.2); } 100% { opacity: 1; -webkit-transform: scale(1); } }
-   @-moz-keyframes popOut { 0% { opacity: 0; } 100% { opacity: 1; } }
-     @-o-keyframes popOut { 0% { opacity: 0; } 100% { opacity: 1; } }
-        @keyframes popOut { 0% { opacity: 0; } 100% { opacity: 1; } }
+   @-moz-keyframes popOut { 0% { opacity: 0; -moz-transform: scale(0); } 80% { -moz-transform: scale(1.2); } 100% { opacity: 1; -moz-transform: scale(1); } }
+     @-o-keyframes popOut { 0% { opacity: 0; -o-transform: scale(0); } 80% { -o-transform: scale(1.2); } 100% { opacity: 1; -o-transform: scale(1); } }
+        @keyframes popOut { 0% { opacity: 0; transform: scale(0); } 80% { transform: scale(1.2); } 100% { opacity: 1; transform: scale(1); } }
 
 .fade-in-long {
   -webkit-animation: fadeIn 1.2s 2.4s forwards;
