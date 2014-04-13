@@ -6,6 +6,7 @@ Template.upload.rendered = function() {
 
 Template.upload.events({
     'click #upload': function(e) {
+        Deps.flush();
         e.preventDefault();
         filepicker.setKey(Meteor.settings.public.filePickerKey);
         var pickerOptions = {
