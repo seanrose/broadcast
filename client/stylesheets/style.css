@@ -6,10 +6,6 @@ body, html, .container, .container-fluid, .col-xs-10, .viewer {
     height: 100%;
 }
 
-.viewer {
-    width: 100%;
-}
-
 .small-container {
   margin: 0;
 }
@@ -187,6 +183,10 @@ third-party element styles
 **************************/
 
 /* viewer.js adjustments */
+
+.viewer {
+    width: 100%;
+}
 
 .crocodoc-current-page {
   width: inherit !important;
