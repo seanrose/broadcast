@@ -3,6 +3,7 @@ var DOCUMENTS_URL = 'https://view-api.box.com/1/documents';
 var SESSIONS_URL = 'https://view-api.box.com/1/sessions';
 
 var HTTP_NO_CONTENT = 204;
+var HTTP_TOO_MANY_REQUESTS = 429;
 
 // TODO(seanrose): use UUID package
 var generateUUID = function() {

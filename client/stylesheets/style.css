@@ -77,6 +77,10 @@ small {
   color: #999;
 }
 
+.modal-header h3 {
+  margin-top: 0;
+}
+
 /* buttons */
 
 .headline .btn {

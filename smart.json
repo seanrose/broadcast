@@ -10,6 +10,7 @@
     "cron": {},
     "npm": {},
     "googleAnalytics": {},
-    "fastclick": {}
+    "fastclick": {},
+    "trail": {}
   }
 }
