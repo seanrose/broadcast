@@ -19,3 +19,7 @@ You'll need to add a `settings.json` file at the root:
 - Box View API key: http://box.com/developer_signup
 - Google Analytics: https://www.google.com/analytics/
 - Filepicker: https://developers.inkfilepicker.com/register/
+
+## For More Info About Meteor
+
+http://docs.meteor.com/
