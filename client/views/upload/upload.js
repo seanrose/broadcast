@@ -12,7 +12,7 @@ Template.upload.events({
         var pickerOptions = {
             extension: ['.pdf', '.ppt', '.pptx'],
             services: ['COMPUTER', 'BOX','DROPBOX', 'GOOGLE_DRIVE', 'SKYDRIVE', 'URL']
-        }
+        };
         filepicker.pick(pickerOptions, function(InkBlob) {
             // Now that we have a file, we don't need those controls
             $('.flex-center').fadeOut();
