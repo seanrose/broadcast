@@ -96,7 +96,7 @@ small {
 }
 
 .btn-presentation:hover {
-  background-color: rgba(235, 235, 235, .8);
+  background-color: rgba(215, 215, 215, .8);
 }
 
 .btn-left {
@@ -111,7 +111,7 @@ small {
 
 .btn-left:active {
   background: url(/left-arrow.png) no-repeat;
-  background-color: rgba(235, 235, 235, .7);
+  background-color: rgba(215, 215, 215, .7);
   background-position: 50% 50%;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -120,7 +120,7 @@ small {
 
 .btn-right:active {
   background: url(/right-arrow.png) no-repeat;
-  background-color: rgba(235, 235, 235, .7);
+  background-color: rgba(215, 215, 215, .7);
   background-position: 50% 50%;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
