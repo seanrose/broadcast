@@ -1,5 +1,6 @@
 Presentations = new Meteor.Collection('presentations');
 
+// Only allow updating of the 'page' by the presenter
 Presentations.allow({
 	update: function(userId, doc, fieldNames, modifier) {
 		var operations = _.keys(modifier);

@@ -30,8 +30,8 @@ body, html, .container, .container-fluid, .col-xs-10, .viewer {
    display: flex;
 
    -webkit-box-align: center;
-   -moz-box-align: center; /* OLD… */
-   -ms-flex-align: center; /* You know the drill now… */
+   -moz-box-align: center;
+   -ms-flex-align: center;
    -webkit-align-items: center;
    align-items: center;
 
