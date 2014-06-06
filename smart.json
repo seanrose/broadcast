@@ -11,6 +11,7 @@
     "npm": {},
     "googleAnalytics": {},
     "fastclick": {},
-    "trail": {}
+    "trail": {},
+    "kadira": {}
   }
 }
