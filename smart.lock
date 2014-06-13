@@ -13,7 +13,6 @@
       "npm": {},
       "googleAnalytics": {},
       "fastclick": {},
-      "trail": {},
       "kadira": {}
     },
     "packages": {
@@ -60,15 +59,10 @@
         "tag": "v0.6.7",
         "commit": "fcb3bfd34d9f6874e626b4e24e8f54107938db41"
       },
-      "trail": {
-        "git": "https://github.com/tbknl/meteor-trail.git",
-        "tag": "v0.1.1",
-        "commit": "34a641c6d610e5d0b1a03d38b3a8853161fd9e0b"
-      },
       "kadira": {
         "git": "https://github.com/meteorhacks/kadira.git",
-        "tag": "v2.1.3",
-        "commit": "ebf969395e6a834a790b9899cd8538dfc9f665f8"
+        "tag": "v2.2.0",
+        "commit": "0f0f6b90a80f2be3980154977fe19f84cc535cf8"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
