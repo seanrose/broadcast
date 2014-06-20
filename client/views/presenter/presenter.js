@@ -9,7 +9,12 @@ Template.presenter.rendered = function() {
 
     viewer = Crocodoc.createViewer('.viewer', {
         url: 'https://view-api.box.com/1/sessions/'+ presentationData.sessionId + '/assets',
-        layout: Crocodoc.LAYOUT_PRESENTATION
+        layout: Crocodoc.LAYOUT_PRESENTATION,
+        plugins: {
+            realtime: {
+                url: presentationData.realtimeUrl
+            }
+        }
     });
     viewer.load();
 

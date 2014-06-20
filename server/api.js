@@ -73,7 +73,7 @@ Meteor.methods({
 
         // TODO(seanrose): handle failure case somehow lol
 
-        return sessionResponse.data.id;
+        return sessionResponse.data;
     },
 
     deleteDocument: function(documentId) {

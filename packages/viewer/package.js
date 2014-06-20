@@ -5,8 +5,10 @@ Package.describe({
 Package.on_use(function (api) {
     api.use('jquery', 'client');
 
-    api.add_files('crocodoc.viewer.min.css', 'client');
-    api.add_files('crocodoc.viewer.min.js', 'client');
+    api.add_files('crocodoc.viewer.css', 'client');
+    api.add_files('crocodoc.viewer.js', 'client');
+    api.add_files('eventsource.js', 'client');
+    api.add_files('realtime.js', 'client');
 
     api.export('Crocodoc', 'client');
 });

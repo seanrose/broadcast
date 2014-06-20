@@ -12,10 +12,10 @@ var deleteExpiredPresentations = function() {
 		console.log('Deleting ' + presentation._id);
 		Presentations.remove(presentation);
 	});
-}
+};
 
 var cron = new Meteor.Cron( {
      events: {
         "* * * * *"  : deleteExpiredPresentations
 	}
-})
+});

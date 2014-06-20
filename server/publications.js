@@ -6,6 +6,6 @@ Meteor.publish('presenter', function(presenterId) {
 Meteor.publish('viewer', function(sessionId) {
 	return sessionId && Presentations.find(
 		{sessionId: sessionId},
-		{fields: {page: 1, sessionId: 1}}
+		{fields: {page: 1, sessionId: 1, realtimeUrl: 1}}
 	);
 });
