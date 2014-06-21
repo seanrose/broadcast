@@ -9,6 +9,8 @@ Package.on_use(function (api) {
     api.add_files('crocodoc.viewer.js', 'client');
     api.add_files('eventsource.js', 'client');
     api.add_files('realtime.js', 'client');
+    api.add_files('fullscreen.js', 'client');
+    api.add_files('fullscreen.css', 'client');
 
     api.export('Crocodoc', 'client');
 });
