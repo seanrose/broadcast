@@ -26,7 +26,6 @@ Template.presenter.rendered = function() {
         $viewerLinkModal.on('hidden.bs.modal', function() {
             $('.viewer').addClass('fade-in');
             $('.btn-presentation').addClass('bob-in');
-            viewer.enterFullscreen();
         });
     });
 

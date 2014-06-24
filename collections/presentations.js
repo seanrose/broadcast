@@ -6,10 +6,9 @@ Presentations.allow({
 		var operations = _.keys(modifier);
 		return (
 			// Must have both page and presenterId field
-			// !_.without(fieldNames, 'page', 'presenterId').length > 0
-			_.intersection(fieldNames, ['page', 'presenterId']).length === 2 &&
+			_.isEqual(fieldNames, ['page', 'presenterId']) &&
 			// Only allow $set
-			_.intersection(operations, ['$set']).length === 1 &&
+			_.isEqual(operations, ['$set']) &&
 			// Only allow $set if presenterId is known
 			modifier.$set.presenterId === doc.presenterId
 		);
