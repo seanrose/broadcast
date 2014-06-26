@@ -192,12 +192,6 @@ third-party element styles
     width: 100%;
 }
 
-.crocodoc-current-page {
-  width: inherit !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
 /* iron-router-progress adjustments */
 
 #iron-router-progress {
