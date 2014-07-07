@@ -18,12 +18,18 @@ You'll need to add a `settings.json` file at the root:
 	    	"filePickerKey": "API key for filepicker.io"
 	  	}
 	}
-
+	
 ## Signup Links (all of these are free)
 - Box View API key: http://box.com/developer_signup
 - Kadira: https://ui.kadira.io/sign-up?plan=free
 - Google Analytics: https://www.google.com/analytics/
 - Filepicker: https://developers.inkfilepicker.com/register/
+
+## Running the App
+
+From the root of the project, after configuring `settings.json`, run this command:
+
+	meteor --settings settings.json
 
 ## For More Info About Meteor
 
