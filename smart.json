@@ -11,6 +11,7 @@
     "npm": {},
     "googleAnalytics": {},
     "fastclick": {},
-    "kadira": {}
+    "kadira": {},
+    "blocking": {}
   }
 }

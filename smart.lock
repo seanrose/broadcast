@@ -13,13 +13,14 @@
       "npm": {},
       "googleAnalytics": {},
       "fastclick": {},
-      "kadira": {}
+      "kadira": {},
+      "blocking": {}
     },
     "packages": {
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.1.1-1",
-        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+        "tag": "v3.2.0-1",
+        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
@@ -28,8 +29,8 @@
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.4.0",
-        "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
+        "tag": "v0.4.1",
+        "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
       },
       "filepicker": {
         "git": "https://github.com/Ink/meteor.git",
@@ -61,8 +62,13 @@
       },
       "kadira": {
         "git": "https://github.com/meteorhacks/kadira.git",
-        "tag": "v2.2.0",
-        "commit": "0f0f6b90a80f2be3980154977fe19f84cc535cf8"
+        "tag": "v2.4.8",
+        "commit": "5f4437af113537def34484c7b7a2a5e4d60847a9"
+      },
+      "blocking": {
+        "git": "https://github.com/peerlibrary/meteor-blocking.git",
+        "tag": "v0.4.1",
+        "commit": "512354e9721d931c7884b56fbb3b419d060ae8da"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
