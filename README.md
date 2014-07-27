@@ -23,7 +23,10 @@ You'll need to add a `settings.json` file at the root:
 - Box View API key: http://box.com/developer_signup
 - Kadira: https://ui.kadira.io/sign-up?plan=free
 - Google Analytics: https://www.google.com/analytics/
-- Filepicker: https://developers.inkfilepicker.com/register/
+
+## Box View Webhooks
+
+Broadcast uses webhooks from Box View to load converted presentations immediataely and create an ultra fast experience. To set up Box View webhooks, email api@box.com with your **API key** and the URL that they need to send webhooks to, which by default is `{{ your host }}/webhook`
 
 ## Running the App
 
