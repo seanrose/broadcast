@@ -11,10 +11,10 @@
       },
       "cron": {},
       "npm": {},
-      "googleAnalytics": {},
       "fastclick": {},
       "kadira": {},
-      "blocking": {}
+      "blocking": {},
+      "iron-router-ga": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -50,11 +50,6 @@
         "tag": "v0.2.6",
         "commit": "177ab6118de5bf8cffb19481343d5762ff7a2aaf"
       },
-      "googleAnalytics": {
-        "git": "https://github.com/yasaricli/googleAnalytics.git",
-        "tag": "v0.0.8",
-        "commit": "2c47f147d64554e870c7c02691d5c2efde040ee3"
-      },
       "fastclick": {
         "git": "https://github.com/percolatestudio/meteor-fastclick",
         "tag": "v0.6.7",
@@ -69,6 +64,11 @@
         "git": "https://github.com/peerlibrary/meteor-blocking.git",
         "tag": "v0.4.1",
         "commit": "512354e9721d931c7884b56fbb3b419d060ae8da"
+      },
+      "iron-router-ga": {
+        "git": "https://github.com/reywood/meteor-iron-router-ga.git",
+        "tag": "v0.2.4",
+        "commit": "4f65a5bf9c600582214ff9e91ee760f3fbad85eb"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

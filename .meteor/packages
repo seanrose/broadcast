@@ -14,7 +14,6 @@ http
 cron
 force-ssl
 npm
-googleAnalytics
 fastclick
 kadira
 blocking

@@ -9,9 +9,9 @@
     },
     "cron": {},
     "npm": {},
-    "googleAnalytics": {},
     "fastclick": {},
     "kadira": {},
-    "blocking": {}
+    "blocking": {},
+    "iron-router-ga": {}
   }
 }
