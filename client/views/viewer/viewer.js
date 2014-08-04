@@ -26,18 +26,6 @@ Template.viewer.rendered = function() {
             {fields: {page: 1} }
         );
         currentPage = presentationCursor.fetch()[0].page;
-        // Must use try/catch block because of bug in Deps.afterFlush
-        try {
-            viewer.scrollTo(currentPage);
-        } catch (e) {
-            var dumbErrorArray = [
-                "Cannot call method 'scrollTo' of undefined",
-                "Cannot read property 'scrollTo' of undefined"
-            ]
-            // Use underscore method instead
-            if ($.inArray(e.message, dumbErrorArray) === -1) {
-                throw(e);
-            }
-        }
+        viewer.scrollTo(currentPage);
     });
 };
