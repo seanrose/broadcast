@@ -47,3 +47,5 @@ Meteor.methods({
         return true;
     }
 });
+
+Meteor.call('deleteDocument', '46d6e66d96ca4884913ab10a1f728abf');
