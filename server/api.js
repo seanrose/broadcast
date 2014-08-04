@@ -10,7 +10,7 @@ Meteor.methods({
 	createPresentation: function(fileUrl) {
         // Upload the document to the Box View API
         // Wrapped with blocking package to force box-view to be synchronous
-        var response = blocking( boxViewClient, boxViewClient.documents.uploadURL )( fileUrl, true );
+        var response = blocking( boxViewClient, boxViewClient.documents.uploadURL )( fileUrl );
 
         //  TODO(seanrose): handle rate limiting
 
@@ -30,7 +30,7 @@ Meteor.methods({
     createSession: function(documentId) {
         // Create the session
         // Wrapped with blocking package to force box-view to be synchronous
-        var response = blocking( boxViewClient, boxViewClient.sessions.create )( documentId, true );
+        var response = blocking( boxViewClient, boxViewClient.sessions.create )( documentId );
 
         // TODO(seanrose): handle rate limiting
 
@@ -40,7 +40,7 @@ Meteor.methods({
     deleteDocument: function(documentId) {
         // Delete the document
         // Wrapped with blocking package to force box-view to be synchronous
-        var response = blocking( boxViewClient, boxViewClient.documents.delete )( documentId, true );
+        var response = blocking( boxViewClient, boxViewClient.documents.delete )( documentId );
 
         // TODO(seanrose): handle rate limiting
 
