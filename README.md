@@ -1,6 +1,8 @@
 broadcast
 =========
 
+Broadcast is a simple Meteor app for syncing presentations on the web in realtime. [Click here to learn more about the story behind Broadcast](https://www.youtube.com/watch?v=ydLFWnGPnew&list=UU3fBiJrFFMhKlsWM46AsAYw).
+
 # Setup
 
 ## Sign Up for 3rd Party Services
