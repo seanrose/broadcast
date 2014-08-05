@@ -23,18 +23,25 @@ Run:
 You'll need to add a `settings.json` file at the root with the API keys from all of the services you signed up for:
 
 	{
-		"BOX_VIEW_API_KEY": "API key for Box View",
-		"kadira": {
-    			"appId": "Kadira App ID",
-    			"appSecret": "Kadira App Secret"
-    		},
-		"public": {
-	    	"googleAnalytics": {
-	            "id": "Google analytics tracking ID",
-	            "host": "host of your app (e.g. for me it's broadcast.meteor.com)"
+	    "box": {
+	        "token": "API key for Box View"
+	    },
+	    "kadira": {
+	    	"appId": "Kadira App ID",
+	    	"appSecret": "Kadira App Secret"
+	    },
+	    "public": {
+	        "filepicker": {
+	            "key": "filepicker API key"
 	        },
-	    	"filePickerKey": "API key for filepicker.io"
-	  	}
+	        "ga": {
+	            "id": "Google Analytics tracking ID"
+	        },
+	        "typekit": {
+	            "url": "Typekit URL (not used yet)"
+	        }
+	    }
+
 	}
 
 ## Install Meteorite

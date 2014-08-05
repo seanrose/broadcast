@@ -8,7 +8,7 @@ Template.upload.events({
     'click #upload': function(e) {
         Deps.flush();
         e.preventDefault();
-        filepicker.setKey(Meteor.settings.public.filePickerKey);
+        filepicker.setKey(Meteor.settings.public.filepicker.key);
         var pickerOptions = {
             extension: ['.pdf', '.ppt', '.pptx'],
             services: ['COMPUTER', 'BOX','DROPBOX', 'GOOGLE_DRIVE', 'SKYDRIVE', 'URL']

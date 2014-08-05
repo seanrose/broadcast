@@ -3,7 +3,7 @@ var generateUUID = function() {
     return nodeUUID.v4();
 };
 
-var boxViewClient = Meteor.require('box-view').createClient(Meteor.settings.BOX_VIEW_API_KEY);
+var boxViewClient = Meteor.require('box-view').createClient(Meteor.settings.box.token);
 
 // TODO(seanrose): use power queue to handle rate limiting
 Meteor.methods({
