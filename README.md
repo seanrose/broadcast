@@ -11,12 +11,18 @@ You'll need to create an account for all of these free services:
 - Kadira: https://ui.kadira.io/sign-up?plan=free
 - Google Analytics: https://www.google.com/analytics/
 
+## Install Meteor
+
+If you haven't installed Meteor yet, run this command:
+
+	$ curl https://install.meteor.com | /bin/sh
+
 ## Clone the repo
 
 Run:
 
-    git clone https://github.com/seanrose/broadcast.git
-    cd broadcast
+    $ git clone https://github.com/seanrose/broadcast.git
+    $ cd broadcast
 
 ## Add settings.json
 
@@ -48,7 +54,7 @@ You'll need to add a `settings.json` file at the root with the API keys from all
 
 Some of the required packages are from [Atmosphere JS](http://atmospherejs.com/). First, install Meteorite ([instructions here](http://atmospherejs.com/docs/installing)). Once you've installed Meteorite, run this from the root of your broadcast directory:
 
-    mrt update
+    $ mrt update
 
 and all of the packages will be installed.
 
@@ -60,13 +66,13 @@ Broadcast uses webhooks from Box View to load converted presentations immediatae
 
 From the root of the project, after configuring `settings.json`, run this command:
 
-	meteor --settings settings.json
+	$ meteor --settings settings.json
 
 ## Deploying the App to meteor.com
 
 Decide on a name for your app, and run this command from the root of your broadcast directory:
 
-    meteor deploy {{ your app name }} --settings settings.json
+    $ meteor deploy {{ your app name }} --settings settings.json
 
 
 ## For More Info About Meteor
