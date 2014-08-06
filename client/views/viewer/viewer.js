@@ -9,7 +9,8 @@ Template.viewer.rendered = function() {
         plugins: {
             realtime: {
                 url: presentationData.realtimeUrl
-            }
+            },
+            fullscreen: {}
         }
     });
     viewer.load();
@@ -27,5 +28,14 @@ Template.viewer.rendered = function() {
         );
         currentPage = presentationCursor.fetch()[0].page;
         viewer.scrollTo(currentPage);
+    });
+
+    // Keyboard shortcuts
+    $(window).on('keydown', function(e){
+        e.preventDefault();
+        // f toggles fullscreen
+        if (e.keyCode === 70) {
+            viewer.enterFullscreen();
+        }
     });
 };

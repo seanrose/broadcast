@@ -24,7 +24,7 @@ if (typeof $ === 'undefined') {
  * The one global object for Crocodoc JavaScript.
  * @namespace
  */
-var Crocodoc = (function () {
+    Crocodoc = (function () {
 
     'use strict';
 

@@ -13,7 +13,8 @@ Template.presenter.rendered = function() {
         plugins: {
             realtime: {
                 url: presentationData.realtimeUrl
-            }
+            },
+            fullscreen: {}
         }
     });
     viewer.load();
@@ -39,16 +40,29 @@ Template.presenter.rendered = function() {
         });
     });
 
-    // Bind page change controls to left and right arrow keys
+    // Keyboard shortcuts
     $(window).on('keydown', function(e){
-        if (_.contains([34, 39], e.keyCode)) { // Right arrow key
-            viewer.scrollTo(Crocodoc.SCROLL_NEXT);
-        } else if (_.contains([33, 37], e.keyCode)) { // left arrow key
-            viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
-        } else {
-            return;
-        }
         e.preventDefault();
+
+        switch (e.keyCode) {
+            // right arrow key or page down scrolls next
+            case 34:
+            case 39:
+                viewer.scrollTo(Crocodoc.SCROLL_NEXT);
+                break;
+            // left arrow key or page up scrolls previous
+            case 33:
+            case 37:
+                viewer.scrollTo(Crocodoc.SCROLL_PREVIOUS);
+                break;
+            // f toggles fullscreen
+            case 70:
+                viewer.enterFullscreen();
+                break;
+
+            default:
+                break;
+        }
     });
 };
 
