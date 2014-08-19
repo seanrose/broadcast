@@ -3,7 +3,9 @@
   "dependencies": {
     "basePackages": {
       "bootstrap-3": {},
-      "iron-router": {},
+      "iron-router": {
+        "version": "0.8.2"
+      },
       "iron-router-progress": {},
       "filepicker": {},
       "viewer": {
@@ -23,8 +25,8 @@
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.9.1",
-        "commit": "9a0e90952d4cb9d3a15451477699ce3e21d4fa73"
+        "tag": "v0.8.2",
+        "commit": "05415a8891ea87a00fb1e2388585f2ca5a38e0da"
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
