@@ -13,7 +13,6 @@
       "npm": {},
       "fastclick": {},
       "kadira": {},
-      "blocking": {},
       "iron-router-ga": {}
     },
     "packages": {
@@ -24,8 +23,8 @@
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.8.1",
-        "commit": "74e867557fd9cb81173e048e5f81cf4a0a1160a8"
+        "tag": "v0.9.1",
+        "commit": "9a0e90952d4cb9d3a15451477699ce3e21d4fa73"
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
@@ -57,13 +56,8 @@
       },
       "kadira": {
         "git": "https://github.com/meteorhacks/kadira.git",
-        "tag": "v2.4.9",
-        "commit": "8bb902989917522822a0897117672ae858c23427"
-      },
-      "blocking": {
-        "git": "https://github.com/peerlibrary/meteor-blocking.git",
-        "tag": "v0.4.1",
-        "commit": "512354e9721d931c7884b56fbb3b419d060ae8da"
+        "tag": "v2.4.13",
+        "commit": "1f3c1a427084af5a2eca2e299eb65bc01387df8a"
       },
       "iron-router-ga": {
         "git": "https://github.com/reywood/meteor-iron-router-ga.git",

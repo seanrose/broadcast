@@ -1,9 +1,13 @@
-var generateUUID = function() {
+function generateUUID() {
     var nodeUUID = Meteor.require('node-uuid');
     return nodeUUID.v4();
-};
+}
 
 var boxViewClient = Meteor.require('box-view').createClient(Meteor.settings.box.token);
+// Wrapped async methods from the Box View API
+var documentsUploadURL = Async.wrap(boxViewClient.documents, 'uploadURL');
+var sessionsCreate = Async.wrap(boxViewClient.sessions, 'create');
+var documentsDelete = Async.wrap(boxViewClient.documents, 'delete');
 
 // TODO(seanrose): use power queue to handle rate limiting
 Meteor.methods({
@@ -18,8 +22,7 @@ Meteor.methods({
      */
 	createPresentation: function(fileUrl) {
         // Upload the document to the Box View API
-        // Wrapped with blocking package to force box-view to be synchronous
-        var response = blocking( boxViewClient, boxViewClient.documents.uploadURL )( fileUrl );
+        var response = documentsUploadURL(fileUrl);
 
         //  TODO(seanrose): handle rate limiting
 
@@ -44,9 +47,8 @@ Meteor.methods({
      * @return <Object> response
      */
     createSession: function(documentId) {
-        // Create the session
-        // Wrapped with blocking package to force box-view to be synchronous
-        var response = blocking( boxViewClient, boxViewClient.sessions.create )( documentId );
+        // Create the Box View API session
+        var response = sessionsCreate(documentId);
 
         // TODO(seanrose): handle rate limiting
 
@@ -63,7 +65,7 @@ Meteor.methods({
     deleteDocument: function(documentId) {
         // Delete the document
         // Wrapped with blocking package to force box-view to be synchronous
-        var response = blocking( boxViewClient, boxViewClient.documents.delete )( documentId );
+        var response = documentsDelete(documentId);
 
         // TODO(seanrose): handle rate limiting
 
