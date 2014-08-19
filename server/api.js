@@ -7,6 +7,15 @@ var boxViewClient = Meteor.require('box-view').createClient(Meteor.settings.box.
 
 // TODO(seanrose): use power queue to handle rate limiting
 Meteor.methods({
+
+    /**
+     * Given a url to a file, creates a
+     * document in the Box View API and
+     * a corresponding entry in the DB
+     *
+     * @param <String> fileUrl:
+     * @return <String> presenterId
+     */
 	createPresentation: function(fileUrl) {
         // Upload the document to the Box View API
         // Wrapped with blocking package to force box-view to be synchronous
@@ -27,6 +36,13 @@ Meteor.methods({
         return presenterId;
     },
 
+    /**
+     * Given a Box View API document ID,
+     * creates a Box View API session
+     *
+     * @param <String> documentId:
+     * @return <Object> response
+     */
     createSession: function(documentId) {
         // Create the session
         // Wrapped with blocking package to force box-view to be synchronous
@@ -37,6 +53,13 @@ Meteor.methods({
         return response;
     },
 
+    /**
+     * Given a Box View API document ID,
+     * deletes the document in the View API
+     *
+     * @param <String> documentId:
+     * @return <Boolean>
+     */
     deleteDocument: function(documentId) {
         // Delete the document
         // Wrapped with blocking package to force box-view to be synchronous
