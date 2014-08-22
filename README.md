@@ -76,6 +76,7 @@ Decide on a name for your app, and run this command from the root of your broadc
 
     $ meteor deploy {{ your app name }} --settings settings.json
 
+You may want to create a file named `deploy.sh` at the root of your project with this command and other deployment configurations to make deploying easier.
 
 ## For More Info About Meteor
 
