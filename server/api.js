@@ -1,9 +1,9 @@
 function generateUUID() {
-    var nodeUUID = Meteor.require('node-uuid');
+    var nodeUUID = Meteor.npmRequire('node-uuid');
     return nodeUUID.v4();
 }
 
-var boxViewClient = Meteor.require('box-view').createClient(Meteor.settings.box.token);
+var boxViewClient = Meteor.npmRequire('box-view').createClient(Meteor.settings.box.token);
 // Wrapped async methods from the Box View API
 var documentsUploadURL = Async.wrap(boxViewClient.documents, 'uploadURL');
 var sessionsCreate = Async.wrap(boxViewClient.sessions, 'create');

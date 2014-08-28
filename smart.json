@@ -1,16 +1,7 @@
 {
   "packages": {
-    "bootstrap-3": {},
-    "iron-router": "0.8.2",
-    "iron-router-progress": {},
-    "filepicker": {},
     "viewer": {
       "path": "packages/viewer"
-    },
-    "cron": {},
-    "npm": {},
-    "fastclick": {},
-    "kadira": {},
-    "iron-router-ga": {}
+    }
   }
 }

@@ -4,15 +4,17 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-bootstrap-3
-iron-router
 jquery
 viewer
-iron-router-progress
-filepicker
+mrt:iron-router-progress@0.4.1
+mrt:filepicker@0.4.0
 http
-cron
+mrt:cron@0.0.1
 force-ssl
-npm
-fastclick
-kadira
+meteorhacks:npm
+percolatestudio:fastclick@0.6.7
+iron:router
+mizzao:bootstrap-3
+
+
+npm-container

@@ -2,89 +2,13 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "bootstrap-3": {},
-      "iron-router": {
-        "version": "0.8.2"
-      },
-      "iron-router-progress": {},
-      "filepicker": {},
       "viewer": {
         "path": "packages/viewer"
-      },
-      "cron": {},
-      "npm": {},
-      "fastclick": {},
-      "kadira": {},
-      "iron-router-ga": {}
+      }
     },
     "packages": {
-      "bootstrap-3": {
-        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
-        "tag": "v3.2.0-1",
-        "commit": "17a63902fc6cf1096c5289d963c66cf28b474727"
-      },
-      "iron-router": {
-        "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.8.2",
-        "commit": "05415a8891ea87a00fb1e2388585f2ca5a38e0da"
-      },
-      "iron-router-progress": {
-        "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.4.1",
-        "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
-      },
-      "filepicker": {
-        "git": "https://github.com/Ink/meteor.git",
-        "tag": "v0.4.0",
-        "commit": "20d56aaaf48be3a5c0499547a495a6463b4fa3d9"
-      },
       "viewer": {
         "path": "packages/viewer"
-      },
-      "cron": {
-        "git": "https://github.com/alexsuslov/Meteor.cron.git",
-        "tag": "v0.0.1",
-        "commit": "5216d14472fee7b692e8371aadc9f35f54ba9bb0"
-      },
-      "npm": {
-        "git": "https://github.com/arunoda/meteor-npm.git",
-        "tag": "v0.2.6",
-        "commit": "177ab6118de5bf8cffb19481343d5762ff7a2aaf"
-      },
-      "fastclick": {
-        "git": "https://github.com/percolatestudio/meteor-fastclick",
-        "tag": "v0.6.7",
-        "commit": "fcb3bfd34d9f6874e626b4e24e8f54107938db41"
-      },
-      "kadira": {
-        "git": "https://github.com/meteorhacks/kadira.git",
-        "tag": "v2.4.13",
-        "commit": "1f3c1a427084af5a2eca2e299eb65bc01387df8a"
-      },
-      "iron-router-ga": {
-        "git": "https://github.com/reywood/meteor-iron-router-ga.git",
-        "tag": "v0.2.5",
-        "commit": "ede54c4633f9a54fddd5c431202a88284df2a932"
-      },
-      "iron-layout": {
-        "git": "https://github.com/EventedMind/iron-layout.git",
-        "tag": "v0.2.0",
-        "commit": "4a2d53e35ba036b0c189c7ceca34be494d4c6c97"
-      },
-      "blaze-layout": {
-        "git": "https://github.com/EventedMind/blaze-layout.git",
-        "tag": "v0.2.5",
-        "commit": "273e3ab7d005d91a1a59c71bd224533b4dae2fbd"
-      },
-      "iron-core": {
-        "git": "https://github.com/EventedMind/iron-core.git",
-        "tag": "v0.2.0",
-        "commit": "0e48b5dc50d03f01025b7b900fb5ce2f13d52cad"
-      },
-      "iron-dynamic-template": {
-        "git": "https://github.com/EventedMind/iron-dynamic-template.git",
-        "tag": "v0.2.1",
-        "commit": "4dd1185c4d9d616c9abdb3f33e4a7d5a88db7e18"
       }
     }
   }
