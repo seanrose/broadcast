@@ -19,6 +19,6 @@ mizzao:bootstrap-3
 
 npm-container
 meteorhacks:kadira
-meteorhacks:fast-render
 datariot:ganalytics
+mrt:iron-router-ga
 
