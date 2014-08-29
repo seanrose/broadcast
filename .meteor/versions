@@ -5,10 +5,6 @@ blaze-tools@1.0.0
 blaze@1.0.3
 callback-hook@1.0.0
 check@1.0.0
-cmather:iron-core@0.2.0
-cmather:iron-dynamic-template@0.2.1
-cmather:iron-layout@0.2.0
-cmather:iron-router@0.8.2
 coffeescript@1.0.2
 ctl-helper@1.0.2
 ctl@1.0.0
@@ -42,7 +38,6 @@ mizzao:bootstrap-3@3.2.0
 mongo-livedata@1.0.3
 mrt:cron@0.0.1
 mrt:filepicker@0.4.0
-mrt:iron-router-ga@0.3.0
 mrt:iron-router-progress@0.9.2
 npm-container@1.0.0
 observe-sequence@1.0.1
