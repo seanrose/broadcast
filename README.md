@@ -52,13 +52,11 @@ You'll need to add a `settings.json` file at the root with the API keys from all
 
 	}
 
-## Install Meteorite
+## Install Packages
 
-Some of the required packages are from [Atmosphere JS](http://atmospherejs.com/). First, install Meteorite ([instructions here](http://atmospherejs.com/docs/installing)). Once you've installed Meteorite, run this from the root of your broadcast directory:
+Install the required packages:
 
-    $ mrt update
-
-and all of the packages will be installed.
+    $ meteor update
 
 ## Set Up Box View Webhooks
 
