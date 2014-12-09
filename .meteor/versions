@@ -11,7 +11,7 @@ coffeescript@1.0.4
 ctl-helper@1.0.4
 ctl@1.0.2
 datariot:ganalytics@0.2.0
-ddp@1.0.11
+ddp@1.0.12
 deps@1.0.5
 ejson@1.0.4
 email@1.0.4
@@ -49,7 +49,7 @@ minimongo@1.0.5
 mizzao:bootstrap-3@3.3.1_1
 mobile-status-bar@1.0.1
 mongo-livedata@1.0.6
-mongo@1.0.8
+mongo@1.0.9
 mrt:cron@0.0.1
 mrt:filepicker@0.4.0
 mrt:iron-router-progress@0.9.3
