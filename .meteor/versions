@@ -34,6 +34,7 @@ iron:url@1.0.3
 jquery@1.0.1
 json@1.0.1
 launch-screen@1.0.0
+less@1.0.11
 livedata@1.0.11
 localstorage@1.0.1
 logging@1.0.5
@@ -52,7 +53,7 @@ mongo-livedata@1.0.6
 mongo@1.0.9
 mrt:cron@0.0.1
 mrt:filepicker@0.4.0
-mrt:iron-router-progress@0.9.3
+multiply:iron-router-progress@1.0.0
 npm-container@1.0.0
 observe-sequence@1.0.3
 ordered-dict@1.0.1
